@@ -1,0 +1,53 @@
+/*
+Plugin Name: (SPYR) Network Bar
+Author: Spyr Media
+Author URI: http://spyr.me
+*/
+
+/*** Defaults */
+body { padding-top:40px; }
+body#media-upload { padding-top:0; }
+.wp-admin { padding-top:0; }
+.admin-bar #spyr_bar { top:28px; }
+#spyr_bar img { max-height:90%;width:auto; }
+
+/*** Bar */
+#spyr_bar { background:left bottom repeat-x;border-bottom:1px solid #aaa;box-shadow:0px 1px 5px 0px #333;font-size:15px;height:40px;line-height:2.4em;position:fixed;left:0;top:0;margin:0;padding:0;width:100%;z-index:10000; }
+#spyr_bar_wrap { margin:0 auto;padding-top:1px;width:960px; }
+
+/*** Logo */
+#spyr_bar_logo { border:none;color:#fff;display:block;float:left;font-family:"Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue","Helvetica","Arial",sans-serif;font-size:1.33333333em;font-weight:normal;letter-spacing:1px;margin:0;padding:0 0 0 10px;text-shadow:1px 1px 1px #000; }
+#spyr_bar_arrow { background:url("images/spyr_bar_arrow.png") left center no-repeat;display:inline-block;height:7px;margin:0 0 2px 4px;width:11px; }
+#spyr_bar_logo:hover #spyr_bar_arrow,#spyr_bar_logo.hover #spyr_bar_arrow { background-position:right center; }
+
+/*** Message */
+#spyr_bar_message { float:right;font-size:0.933333333em;height:28px;line-height:1.9em;padding:5px 10px 0 0;text-align:right;text-shadow:0 1px 0 #111;width:60%; }
+#spyr_bar_message a { font-weight:normal;text-decoration:none; }
+#spyr_bar_message a:hover { text-decoration:underline; }
+
+/*** Dropdown */
+.spyr_bar_nav .sub-menu { display:none !important; }
+.spyr_bar_nav,.spyr_bar_nav dd,.spyr_bar_nav dt,.spyr_bar_nav ul { margin:0;padding:0px; }
+.spyr_bar_nav a,.spyr_bar_nav a:visited { outline:none;text-decoration:none; }
+.spyr_bar_nav dd { position:relative; }
+.spyr_bar_nav dd ul { background:url("images/spyr_bar_nav_background.png") left top repeat;border:1px solid #aaa;box-shadow:0 1px 5px 0px #333;display:none;left:0px;line-height:1.8em;list-style:none;min-width:265px;padding:0 1px 1px 1px;position:absolute;top:39px;width:auto; }
+.spyr_bar_nav dd ul li { border-top:1px dashed #aaa;text-align:left; }
+.spyr_bar_nav dd ul li:first-child { border:none; }
+.spyr_bar_nav dd ul li a { background:url("images/spyr_bar_nav_background_hover.png") -9999px 0 no-repeat;display:block;padding:7px 10px 6px 10px;text-shadow:1px 1px 0 #111; }
+.spyr_bar_nav dd ul li a:hover { background:url("images/spyr_bar_nav_background_hover.png") left top repeat; }
+.spyr_bar_nav .subnav_arrow { background:url("images/spyr_bar_subnav_arrow.png") 6px top no-repeat;display:block;float:left;height:25px;margin-right:13px;max-height:100%;width:31px; }
+/*.spyr_bar_nav a:hover .subnav_arrow { background-position:6px -125px; }*/
+
+/*** Colors */
+#spyr_bar { background-color:#222; }
+.spyr_bar_nav dd ul { background-color:#1a1a1a; }
+#spyr_bar,#spyr_bar_logo,.spyr_bar_nav a,.spyr_bar_nav a:visited { color:#ddd; }
+#spyr_bar_logo:hover,#spyr_bar_logo.hover,.spyr_bar_nav a:hover { color:#fff; }
+#spyr_bar,.spyr_bar_nav dd ul { border-color:#aaa; }
+.spyr_bar_nav dd ul li { border-color:#555; }
+
+/*** Bar Textures
+#spyr_bar.sp_gradient { background-image:url("images/spyr_bar_background_gradient.png"); }
+#spyr_bar.sp_texture-1 { background-image:url("images/spyr_bar_background_texture-1.png"); }
+#spyr_bar.sp_texture-2 { background-image:url("images/spyr_bar_background_texture-2.png"); } */
+#spyr_bar { background-image:url("images/spyr_bar_background_texture-1.png"); }
